@@ -16,10 +16,6 @@ public class SpringbootFirebaseApplication {
 
     public static void main(String[] args) throws IOException {
 
-        ClassLoader classLoader = SpringbootFirebaseApplication.class.getClassLoader();
-
-       // File file = new File(Objects.requireNonNull(classLoader.getResource("serviceAccountKey.json")).getFile());
-
         FileInputStream serviceAccount =
                 new FileInputStream("./serviceAccountKey.json");
 
